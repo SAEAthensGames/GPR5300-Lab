@@ -169,5 +169,7 @@ int main() {
 
        //ifstream -> Decostructor
 
+       inf.is_open();
+
        inf.close();
 }
