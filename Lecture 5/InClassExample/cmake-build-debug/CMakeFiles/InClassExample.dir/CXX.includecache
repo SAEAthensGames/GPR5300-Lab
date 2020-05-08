@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Repos/GPR5300-Lab/Lecture 5/InClassExample/main.cpp
+iostream
+-
+iomanip
+-
+string
+-
+istream
+-
+ostream
+-
+fstream
+-
+sstream
+-
+
