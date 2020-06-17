@@ -1,32 +1,24 @@
-//Creating a dynamic size array for the Challenge #2
+//Stack Allocation
 #include <iostream>
+#include<stdio.h>
 
-using namespace std;
+int total;
+int Square(int x) {
+	return x * x;
+}
+
+int SquareofSum(int x, int y) {
+	int z = Square(x + y);
+	return z;
+}
 
 int main()
 {
-	//Creating a dynamic size array
-	int x;
-	int* p;
-	cout << "Give entries" << endl;
+	int a = 4;
+	int b = 5;
 
-	cin >> x;
-	p = new(nothrow)int[x];
-
-	if (p == nullptr) {
-		cout << "Error: memory is 404" << endl;
-		delete[] p;
-		return 1;
-	}
-	else {
-		for (int i = 0; i < x; i++) {
-			p[i] = 0;
-			cout << p[i] << endl;
-		}
-	}
-
-	cin >> x;
-
-	return 0;
+	total = SquareofSum(a, b);
+	printf("output = %d", total);
 }
+
 
