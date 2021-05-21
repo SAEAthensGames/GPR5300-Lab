@@ -15,7 +15,6 @@ int SquareofSum(int x, int y) {
 
 int main()
 {
-9
 	int a = 4;
 	int b = 5;
 
